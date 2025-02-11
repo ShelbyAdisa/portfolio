@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groomers</title>
+</head>
+<body>
+ <p id=1><u><h1>Grooming Form</h1></u></p>
+  <style>
+   .container{
+        color: pink;
+width: 360px;
+padding: 20px;
+border-radius: 10;
+text-align: center;}
+.form-group{
+  margin-bottom: 35px;}
+  .form-group input{
+    width:100%;
+    font-size:20px;
+    border-radius:7px;}
+
+
+    .send{
+      width:40px;
+      background-color: pink;
+      color: magenta;
+      border-radius: 10px;
+      font-size: 18px;
+      padding: 7px;
+      justify-content: center;}
+
+
+
+
+
+
+
+
+
+
+  </style>
+ 
+  <form action="">
+    <label for="Name"><strong>Pet Name</strong></label>
+    <br>
+    <input type="text" id="Name" name="name">
+    <br><br>
+
+    <label for="Breed"><strong>Breed</strong></label>
+    <br>
+    <input type="text" id="Breed" name="breed">
+    <br><br>
+
+    <label for="Date"><strong>Date of grooming</strong></label>
+    <br>
+    <input type="text" id="Date" name="date">
+    <br><br>
+
+    <label for="age"><strong>Age</strong></label>
+    <br>
+    <input type="text" id="age" name="age">
+    <br><br>
+
+    <u><strong>Gender</strong></u>
+    <br>
+    <label for="male"><strong>Male</strong></label>
+    <input type="radio" name="gender" value="Male">
+    <br>
+    <label for="female"><strong>Female</strong></label>
+    <input type="radio" name="gender" value="Female">
+    <br><br>
+
+    <ul>
+      <li><u><strong>Coat and Fur Care</strong></u></li>
+      <label for="Fur Length"><u>Fur Length</u></label>
+      <br>
+      <select id="fur_length" name="Fur Length">
+        <option value="Long">Long</option>
+        <option value="Medium">Medium</option>
+        <option value="Short">Short</option>
+      </select>
+      <br><br>
+
+      <label for="fur_texture"><u>Fur texture</u></label>
+      <br>
+      <label for="straight">Straight</label>
+      <input type="radio" name="fur_texture" value="Straight">
+      <label for="wavy">Wavy</label>
+      <input type="radio" name="fur_texture" value="Wavy">
+      <label for="curly">Curly</label>
+      <input type="radio" name="fur_texture" value="Curly">
+      <label for="coarse">Coarse</label>
+      <input type="radio" name="fur_texture" value="Coarse">
+      <br><br>
+
+      <label for="shampoo_used"><u>Shampoo used</u></label>
+      <input type="text" id="shampoo_used" name="shampoo_used">
+      <br>
+
+      <label for="conditioner_used"><u>Conditioner used</u></label>
+      <input type="text" id="conditioner_used" name="conditioner_used">
+      <br><br>
+
+      <label for="Matting_or_Tangling"><u>Matting or Tangling</u></label>
+      <br>
+      <label for="yes">Yes</label>
+      <input type="radio" name="Matting_or_Tangling" value="Yes">
+      <label for="no">No</label>
+      <input type="radio" name="Matting_or_Tangling" value="No">
+      <br>
+
+      <label for="specific_areas"><u>If yes, specify areas:</u></label>
+      <input type="text" id="specific_areas" name="specific_areas">
+      <br><br>
+
+      <u><label for="next_grooming_appointment"><strong>Next grooming appointment</strong></label></u>
+      <br>
+      <label for="trim">Trim</label>
+      <input type="checkbox" name="next_grooming_appointment" value="Trim">
+      <label for="full_trim">Full Trim</label>
+      <input type="checkbox" name="next_grooming_appointment" value="Full Trim">
+      <label for="bath">Bath</label>
+      <input type="checkbox" name="next_grooming_appointment" value="Bath">
+      <br><br>
+      <div>
+        
+      <!-- Message Box -->
+      <label for="message_box"><u><strong>Additional Notes</strong></u></label>
+      <br>
+      <textarea id="message_box" name="message_box" rows="4" cols="50" placeholder="Add any additional details or comments here..."></textarea>
+      <br><br>
+
+      <button type="submit">Send</button>
+    </ul>
+  </form>
+</body>
+</html>
+</div>
