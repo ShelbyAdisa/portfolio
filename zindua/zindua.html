@@ -1,77 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Financing Options</title>
-  <style>
-    .container {
-      display: flex;
-      max-width: 900px;
-      margin: 50px auto;
-      align-items: center;
-    }
-    .text-content {
-      flex: 1;
-      padding-right: 20px;
-    }
-    .text-content h1 {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .text-content span {
-      color: #e63946;
-    }
-    .text-content p {
-      font-size: 16px;
-      margin: 10px 0;
-    }
-    .text-content b {
-      font-weight: bold;
-    }
-    .buttons {
-      margin-top: 20px;
-    }
-    .btn {
-      padding: 10px 15px;
-      border: none;
-      font-size: 14px;
-      cursor: pointer;
-      margin-right: 10px;
-      border-radius: 5px;
-    }
-    .btn-primary {
-      background-color: #e63946;
-      color: white;
-    }
-    .btn-secondary {
-      background-color: white;
-      color: #e63946;
-      border: 1px solid #e63946;
-    }
-    .image-container {
-      flex: 1;
-    }
-    .image-container img {
-      max-width: 100%;
-      border-radius: 5px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            position: relative;
+            display: inline-block;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            padding: 10px;
+            display: block;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-width: 150px;
+        }
+        .dropdown a {
+            padding: 10px;
+            display: block;
+        }
+        .navbar ul li:hover .dropdown {
+            display: block;
+        }
+        .apply-btn {
+            border: 2px solid #d9534f;
+            background-color: #d9534f;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .header{
+            text-align: center;
+        }
+    .login-form{
+            text-align: center;
+        }
+        .sign-in{
+            border:5px solid #d9534f;
+            background-color:#d9534f;
+            color: white;
+        }        
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="text-content">
-      <h1>Financing options that can’t be matched, <span>flexible instalments and learn-now-pay-later plans</span></h1>
-      <p>We are known for the <b>most flexible financing options.</b> We offer flexible instalments as well as <b>Lipa Mdogo Mdogo</b> and <b>Income-Share Agreements</b> as our deferred tuition financing options.</p>
-      <div class="buttons">
-        <button class="btn btn-primary">Get Fee Estimate</button>
-        <button class="btn btn-secondary">See Pricing Options</button>
-      </div>
+    <div class="navbar">
+        <a href="#">
+            <img src="zindua logo.jpg" alt="Zindua School Logo" style="height: 50px;">
+        </a>
+        <ul>
+            <li><a href="#">Programs</a>
+                <div class="dropdown">
+                    <a href="#">Software Engineering</a>
+                    <a href="#">Data Programs</a>
+                    <a href="#">Programs by your level</a>
+                    <a href="#">Short tech courses</a>
+                </div>
+            </li>
+            <li><a href="#">Financing Plans</a>
+                <div class="dropdown">
+                    <a href="#">Lipa Mdogo Mdogo</a>
+                    <a href="#">Program pricing options</a>
+                    <a href="#">Income Share agreements</a>
+                    <a href="#">Estimate your fees</a>
+                </div>
+            </li>
+            <li><a href="#">Resources</a>
+                <div class="dropdown">
+                    <a href="#">Discover Blog</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Events/Masterclass</a>
+                    <a href="#">Community</a>
+                </div>
+            </li>
+            <li><a href="#">More</a>
+                <div class="dropdown">
+                    <a href="#">About Us</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Join our Team</a>
+                </div>
+            </li>
+            <li><a href="login">Login</a></li>
+            <li><a href="#" class="apply-btn">Apply Today</a></li>
+        </ul>
     </div>
-    <div class="image-container">
-      <img src="https://www.health.com/thmb/KVe12-gixCE90PiEjNz6WZt7mdU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/stress-GettyImages-1469453659-ed795ae1f55b43a8a0a4118ebd2c5d6a.jpg" alt="Placeholder Image">
-    </div>
-  </div>
+<div>
+   <h1 class="header">Hi, welcome back!</h1>
+   <br>
+    <form action="" class = "login-form">
+<label for="username">Username</label>
+<input type="text" id="username" name="username">
+<br><br>
+<label for="password">Password</label>
+<input type="password" id="password" name="password">
+<br><br>
+<p>OR</p>
+<br>
+<button>Login Via Magic URL</button>
+<br>
+<label for="signed in">Keep me signed in</label>
+<input type="checkbox" id="signed in" name="signed in">
+<br>
+<button class="sign-in">Sign in</button>
+
+    </form>
+    
+
+
 </body>
 </html>

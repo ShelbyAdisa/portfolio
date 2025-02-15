@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events-Zindua School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            position: relative;
+            display: inline-block;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            padding: 10px;
+            display: block;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-width: 150px;
+        }
+        .dropdown a {
+            padding: 10px;
+            display: block;
+        }
+        .navbar ul li:hover .dropdown {
+            display: block;
+        }
+        .apply-btn {
+            border: 2px solid #d9534f;
+            background-color: #d9534f;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .events-container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .event-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .event-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .register-btn {
+            background-color: #d9534f;
+            color: white;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .footer {
+            background: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .newsletter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .newsletter input {
+            padding: 10px;
+            width: 250px;
+            border: none;
+            margin-right: 10px;
+        }
+        .newsletter button {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">
+            <img src="zindua logo.jpg" alt="Zindua School Logo" style="height: 50px;">
+        </a>
+        <ul>
+            <li><a href="#">Programs</a>
+                <div class="dropdown">
+                    <a href="#">Software Engineering</a>
+                    <a href="#">Data Programs</a>
+                    <a href="#">Programs by your level</a>
+                    <a href="#">Short tech courses</a>
+                </div>
+            </li>
+            <li><a href="#">Financing Plans</a>
+                <div class="dropdown">
+                    <a href="#">Lipa Mdogo Mdogo</a>
+                    <a href="#">Program pricing options</a>
+                    <a href="#">Income share agreements</a>
+                    <a href="#">Estimate your fees</a>
+                </div>
+            </li>
+            <li><a href="#">Resources</a>
+                <div class="dropdown">
+                    <a href="#">Discover Blog</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Events/Masterclass</a>
+                    <a href="#">Community</a>
+                </div>
+            </li>
+            <li><a href="#">More</a>
+                <div class="dropdown">
+                    <a href="#">About Us</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Join our team</a>
+                    <a href="#">Careers</a>
+                </div>
+            </li>
+            <li><a href="#">Login</a>
+            <div class="dropdown">
+                <a href="zindua.html">Student login</a>
+                <a href="#">Ambassador login</a>
+            </div>
+            </li>
+            <li><a href="#" class="apply-btn">Apply Today</a></li>
+        </ul>
+    </div>
+    <div class="events-container">
+        <h2>Events</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <img src="open day.jpg" alt="Event 1">
+                <p><strong>Zindua Open Day-Careers in Tech Panel & Official Graduation</strong></p>
+                <p><h6>Saturday, December 7th, 2024 at 10:00:00</h6></p>
+                <p>Open Event | Priority to graduates & their invitees | iHub, James Gichuru Road, Lavington, Nairobi</p>
+                <button class="register-btn">Register Now</button>
+            </div>
+            <div class="event-card">
+                <img src="figma.jpg" alt="Event 2">
+                <p><strong>Figma User Interface Design Masterclass</strong></p>
+                <p><h6>Saturday, November 16th, 2024 at 10:00:00</h6></p>
+                <p>Ksh 1500 Early | Ksh 2000 Regular | 20% OFF Student | Circular Innovation Hub, 233 Owashika Road, Lavington</p>
+                <button class="register-btn">Register Now</button>
+            </div>
+            <div class="event-card">
+                <img src="pathways.jpg" alt="Event 3">
+                <p><strong>Software Pathways Info Session getting started in software careers</strong></p>
+                <p>Open Event | Priority to graduates & their invitees | iHub, James Gichuru Road, Lavington, Nairobi</p>
+                <p><h6>Every 2nd Wednesday of the month at 18:30:00</h6></p>
+                   <p>Free | Online/Virtual Event</p>
+                   <button class="register-btn">Register Now</button>
+            </div>
+            <div class="event-card">
+                <img src="data path.jpg" alt="Event 4">
+                <p><strong>Data Pathways Info Session-Getting started in data careers</strong></p>
+               <p><h6>Every 2nd Wednesday of the month at 18:30:00</h6></p>
+               <p>Free | Online/Virtual Event</p>
+                <button class="register-btn">Register Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Contact us: help@zinduaschool.com | +254-710-987376</p>
+        <p>Location: 233 Owasika Road, Nairobi, Kenya</p>
+        <div class="newsletter">
+            <input type="email" placeholder="Your Email Address">
+            <button>Subscribe</button>
+        </div>
+    </div>
+</body>
+</html>
